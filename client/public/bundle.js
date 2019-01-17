@@ -86,6 +86,42 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./client/components/campuses.jsx":
+/*!****************************************!*\
+  !*** ./client/components/campuses.jsx ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Campuses(props) {\n\n    return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n            'button',\n            null,\n            ' Campuses Button '\n        )\n    );\n}\n\nmodule.exports = Campuses;\n\n//# sourceURL=webpack:///./client/components/campuses.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/index.js":
+/*!************************************!*\
+  !*** ./client/components/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar Students = __webpack_require__(/*! ./students.jsx */ \"./client/components/students.jsx\");\nvar Campuses = __webpack_require__(/*! ./campuses.jsx */ \"./client/components/campuses.jsx\");\n\nmodule.exports = {\n    Students: Students,\n    Campuses: Campuses\n};\n\n//# sourceURL=webpack:///./client/components/index.js?");
+
+/***/ }),
+
+/***/ "./client/components/students.jsx":
+/*!****************************************!*\
+  !*** ./client/components/students.jsx ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Students(props) {\n\n    return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n            'button',\n            null,\n            ' Students Button '\n        )\n    );\n}\n\nmodule.exports = Students;\n\n//# sourceURL=webpack:///./client/components/students.jsx?");
+
+/***/ }),
+
 /***/ "./client/index.js":
 /*!*************************!*\
   !*** ./client/index.js ***!
@@ -94,7 +130,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Index = function Index() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        ' Hello React! '\n    );\n};\n\n_reactDom2.default.render(_react2.default.createElement(Index, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./client/index.js?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _index = __webpack_require__(/*! ./components/index.js */ \"./client/components/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Index = function Index() {\n        return _react2.default.createElement(\n                'div',\n                null,\n                ' Hello React!',\n                _react2.default.createElement(_index.Students, null),\n                _react2.default.createElement(_index.Campuses, null)\n        );\n};\n\n_reactDom2.default.render(_react2.default.createElement(Index, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./client/index.js?");
 
 /***/ }),
 
