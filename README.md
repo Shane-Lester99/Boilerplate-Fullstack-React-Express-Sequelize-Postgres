@@ -1,6 +1,6 @@
 # Boilerplate-Fullstack-React-Express-Sequelize-Postgres
 
-- This is a completely configured, working, and functional boilerplate fullstack React App made available to anyone who wished to build a React app with a backend using Node/Express, Sequelize, and Postgres.
+- This is a completely configured, working, and functional boilerplate fullstack React App made available to anyone who wishes to build a React app with a backend using Node/Express, Sequelize, and Postgres.
 
 - This repo solves the issue of create-react-app requiring its own server, which would have to contact another server for an API you build
 
